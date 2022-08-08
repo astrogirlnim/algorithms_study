@@ -1,29 +1,17 @@
+def primes(n):
+    """ Returns  a list of primes < n """
+    sieve = [True] * n
+    for i in range(3,int(n**0.5)+1,2):
+        if sieve[i]:
+            sieve[i*i::2*i]=[False]*((n-i*i-1)//(2*i)+1)
+    return [2] + [i for i in range(3,n,2) if sieve[i]]
+
 def sumPrimes(n):
     """
     Sums all primes with value below n.
     """
-    primes = [2]
-    start = 2
-    sum = 0
-
-    while start < n:
-        sum += start
-
-        # get the next prime
-        start += 1
-        while start <= n:
-            is_prime = True
-            for i in primes:
-                if start % i == 0:
-                    is_prime = False
-            
-            if is_prime:
-                primes.append(start)
-                break
-            else:
-                start += 1
-    
-    return sum
+    p = primes(n)
+    return sum(p)
 
 num = int(input())
 print(sumPrimes(num))

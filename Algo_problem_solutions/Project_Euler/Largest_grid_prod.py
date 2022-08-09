@@ -46,12 +46,7 @@ def maxGridProd(g, k):
                 p *= g[j-n][i+n]
             max_prod = max(max_prod, p)
 
-    return max_prod
-    
-
-
-        
-    
+    return max_prod    
 
 g = []
 # hard-coded path for now

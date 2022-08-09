@@ -17,7 +17,6 @@ def factorize(n):
             if t % i == 0 and i not in factors:
                 factors.extend([i, t/i])
             i += 1
-        print(factors)
 
     
     return t 

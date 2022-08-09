@@ -1,3 +1,4 @@
+#21
 def sumDivisors(n):
     """
     Calculates the sum of the proper divisors of n.

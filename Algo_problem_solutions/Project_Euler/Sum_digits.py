@@ -1,3 +1,4 @@
+#16
 def sumDigits(n):
     """
     Sum of digits of 2^n.

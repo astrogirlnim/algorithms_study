@@ -1,3 +1,4 @@
+#27
 def primeGenerator(n):
     """ Returns  a list of primes < n """
     sieve = [True] * n

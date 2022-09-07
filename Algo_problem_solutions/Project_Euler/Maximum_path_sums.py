@@ -2,9 +2,8 @@
 
 # Read input triangle
 import collections
-
-
 g = []
+
 # hard-coded path for now
 with open("algorithms_study\\Algo_problem_solutions\\Project_Euler\\inputs\\triangle_18.txt", 'r') as gf:
     for line in gf:

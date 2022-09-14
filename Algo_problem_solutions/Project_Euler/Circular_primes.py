@@ -24,9 +24,7 @@ for x in p:
                 rx.append(num)
 
         if all([j in p for j in rx]):
-            print(x)
             res += len(rx)
-            print("sum =", res)
         
         seen.extend(rx)
 
